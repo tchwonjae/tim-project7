@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesozoic Eden Park</title>
+  
+  <!-- 구글 웹 폰트 import -->
+  <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200vh;
+      text-align: center;
+    }
+
+    #video-background {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+      background-size: cover;
+    }
+
+    h1 {
+      font-size: 5rem; /* 글꼴 크기 조정 */
+      font-family: 'Lemon', sans-serif; /* Lemon 폰트 적용 */
+      color: yellowgreen;
+    }
+
+    .link {
+      display: inline-block; /* 인라인 요소를 블록 요소로 변경하여 너비와 높이 조정 가능하도록 함 */
+      padding: 40px 90px; /* 위아래 10px, 좌우 20px의 안쪽 여백 설정 */
+      background-color: transparent; /* 배경색상을 투명하게 만듦 */
+      color: yellowgreen; /* 텍스트 색상 변경 */
+      text-decoration: none; /* 밑줄 제거 */
+      border-radius: 100px; /* 버튼 모서리를 둥글게 만듦 */
+      font-size: 2rem; /* 글자 크기 조정 */
+      font-family: 'Protest Guerrilla', sans-serif; /* Protest Guerrilla 폰트 적용 */
+    }
+
+  </style>
+</head>
+
+<body>
+ <!-- 비디오 -->
+ <section class="video_section position-relative">
+  <video autoplay loop muted id="video-background">
+    <source src="Dinosaur.mp4/Dinosaur.mp4" type="video/mp4">
+  </video>
+
+  <!-- 가운데 텍스트 -->
+  <section>
+    <h1 class="">
+      Mesozoic Eden Park
+    </h1>
+    <div>
+      <a href="Main.html" class="link">
+        Would you like to enter?
+      </a>
+    </div>
+  </section>
+</body>
+
+</html>
